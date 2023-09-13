@@ -1,0 +1,170 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+h1,
+h2,
+h3 {
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    height: 600px;
+    /* Adjust the height as needed */
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+    /* Align navigation to the right */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+    /* Adjust the spacing between navigation items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* Home section styles */
+#home {
+    background-color: #f2f2f2;
+    background-image: url(images/img1.png);
+    padding: 50px;
+    text-align: left;
+    /* Align content to the left */
+}
+
+/* About Us section styles */
+#about {
+    background-color: #000;
+    padding: 50px;
+    text-align: right;
+    background-image: url(images/img6.jpg);
+   
+       
+    /* Align content to the left */
+    color:#000;
+}
+
+#about img {
+    max-width: 300px;
+    /* Adjust the maximum width of the image */
+}
+
+/* Services section styles */
+#services {
+    background-color: #000;
+    background-image: url(images/img4.jpg);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 50px;
+    text-align: left;
+    /* Align content to the left */
+    color: #fff;
+}
+
+/* Adjust the max-width and margin-bottom of the project images */
+#services img {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+/* Portfolio section styles */
+#portfolio {
+    background-color:#000;
+    padding: 50px;
+    text-align: left;
+    color: #fff;
+    /* Align content to the left */
+}
+
+#portfolio img {
+    max-width: 400px;
+    /* Adjust the maximum width of the image */
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: #333;
+}
+
+/* Contact Us section styles */
+#contact {
+    background-color: #000;
+    background-image: url(images/img5.jpg);
+    padding: 50px;
+    text-align: left;
+    /* Align content to the left */
+    color: #fff;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Align form elements to the top */
+}
+
+#contact .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+#contact .form-group label {
+    margin-bottom: 5px;
+}
+
+#contact .button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#contact input,
+#contact textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#contact input[type="submit"],
+#contact input[type="button"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    width: auto;
+    margin-right: 10px;
+}
+
+#contact input[type="submit"]:hover,
+#contact input[type="button"]:hover {
+    background-color: #555;
+}

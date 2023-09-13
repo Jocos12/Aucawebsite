@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add your custom CSS styles here */
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all the navigation links
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            // Get all the sections
+            const sections = document.querySelectorAll('section');
+
+            // Add click event listener to each navigation link
+            navLinks.forEach((link) => {
+                link.addEventListener('click', (event) => {
+                    // Prevent default link behavior
+                    event.preventDefault();
+
+                    // Get the target section
+                    const targetSection = document.querySelector(link.getAttribute('href'));
+
+                    // Hide all sections
+                    sections.forEach((section) => {
+                        section.style.display = 'none';
+                    });
+
+                    // Show the target section
+                    targetSection.style.display = 'block';
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About the University</a></li>
+                <li><a href="#services">Academic programs</a></li>
+                <li><a href="#portfolio">Administration</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to Adventist University Of Central Africa</h1>
+        <p>This is our home section website.</p>
+    </section>
+
+    <!-- About us Section -->
+    <section id="about">
+        <h2>Welcome To Our University</h2>
+        <p class="white-text">
+            Welcome To our University and the University started in June 2000
+
+
+
+        </p>
+        <a href="#">Read More</a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <title>Engineering Department Of AUCA</title>
+        <style>
+            body {
+                background-color: black;
+            }
+
+            h1 {
+                color: white;
+                text-align: center;
+                font-weight: bold;
+                font-style: italic;
+                margin-top: 20px;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                color: white;
+                margin-top: 20px;
+            }
+
+            th {
+                font-weight: bold;
+                font-style: italic;
+                background-color: #f2f2f2;
+                padding: 10px;
+                color: black;
+            }
+
+            td {
+                border: 1px solid #ccc;
+                padding: 10px;
+                color: black;
+                /* Set the text color to black */
+            }
+
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+            tr:hover {
+                background-color: #e0e0e0;
+            }
+        </style>
+        </head>
+
+        <body>
+
+            <h2>Academic Programs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.N</th>
+                        <th>DeptNames</th>
+                        <th>Session</th>
+                        <th>Duration</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Software Engineering</td>
+                        <td>6</td>
+                        <td>9:00 AM - 11:00 AM</td>
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Networking</td>
+
+                        <td>12</td>
+                        <td>10:00 AM - 11:00 AM</td>
+
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Information Management</td>
+                        <td>9</td>
+                        <td>1:00 PM - 3:00 PM</td>
+
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Theology</td>
+                        <td>7</td>
+                        <td>7:00 PM - 8:30 PM</td>
+
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Administration</h2>
+        <ol class="admin-list">
+            <li class="admin-item">NshunGuye Justin - Vice Chancellor</li>
+            <li class="admin-item">Prince - Dean of Academic Affairs</li>
+            <li class="admin-item">Michael Johnson - Director of Finance</li>
+            <li class="admin-item">Emily Davis - Registrar</li>
+            <li class="admin-item">Jason - Director of Human Resources</li>
+        </ol>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact us</h2>
+        <p>Feel free to get in touch with us.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <div>
+                <input type="submit" value="Send">
+                <input type="button" value="Cancel">
+            </div>
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Joseph C. All rights reserved.</p>
+        color: #fff;
+    </footer>
+</body>
+
+</html>
